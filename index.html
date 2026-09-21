@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Darko Milenkoski – Software Engineering Student</title>
+    <meta name="description" content="Portfolio of Darko Milenkoski: Android, Java and web projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <a class="mark" href="#top">Darko Milenkoski</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1><span>Darko</span><span>Milenkoski</span></h1>
+          <p class="lede">Software engineering student at FINKI, curious about how software works from the screen down to the server. Open to internships.</p>
+          <div class="btns">
+            <a class="btn primary" href="#projects">See my projects</a>
+<!--                CV-->
+            <a class="btn" href="https://acrobat.adobe.com/id/urn:aaid:sc:eu:cad0d2f0-6c8e-490f-9c0e-000d36081953">Download CV</a>
+          </div>
+        </div>
+        <div class="photo">
+          <span class="initials" aria-hidden="true">DM</span>
+          <img src="img/A4.jpg" alt="Photo of Darko Milenkoski" onerror="this.remove()">
+        </div>
+      </div>
+
+      <div class="devices" aria-label="Areas of work">
+        <a class="device" href="#java">
+          <svg viewBox="0 0 200 150" role="img" aria-label="Coffee cup">
+            <path class="shape" d="M30 50 h110 v40 a40 40 0 0 1 -40 40 h-30 a40 40 0 0 1 -40 -40 z"/>
+            <path class="detail" d="M140 62 h12 a16 16 0 0 1 0 32 h-16"/>
+            <rect class="screen" x="42" y="62" width="86" height="22" rx="6"/>
+            <path class="detail" d="M60 34 q-8 -10 0 -20 M85 34 q-8 -10 0 -20 M110 34 q-8 -10 0 -20"/>
+            <line class="detail" x1="20" y1="140" x2="160" y2="140"/>
+          </svg>
+          Java
+        </a>
+        <a class="device" href="#web">
+          <svg viewBox="0 0 200 150" role="img" aria-label="Browser window">
+            <rect class="shape" x="8" y="10" width="184" height="130" rx="12"/>
+            <line class="detail" x1="8" y1="40" x2="192" y2="40"/>
+            <circle cx="24" cy="25" r="4" fill="var(--ink)"/>
+            <circle cx="38" cy="25" r="4" fill="var(--ink)"/>
+            <rect class="screen" x="20" y="52" width="160" height="76" rx="6"/>
+          </svg>
+          Web
+        </a>
+          <a class="device" href="#android">
+              <svg viewBox="0 0 120 190" role="img" aria-label="Phone">
+                  <rect class="shape" x="20" y="6" width="80" height="178" rx="16"/>
+                  <rect class="screen" x="30" y="24" width="60" height="132" rx="6"/>
+                  <line class="detail" x1="50" y1="171" x2="70" y2="171"/>
+              </svg>
+              Android
+          </a>
+      </div>
+    </div>
+  </div>
+
+  <section id="projects">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <div class="projects">
+
+        <!-- PROJECT 1  -->
+          <article class="project" id="java">
+              <span class="kind">Java,SpringBoot,Spring Data JPA,PostgreSQL,React,Bootstrap</span>
+              <div class="shot filled"><img src="img/earthquake.png" alt="Screenshot of My Project" loading="lazy"></div>
+              <div>
+                  <h3>Earthquake Monitor project</h3>
+                  <p>A full stack application that fetches,filters,stores and displays recent data from the USGS Earthquake API.</p>
+              </div>
+              <div class="links">
+                  <a href="https://github.com/MilenkoskiDarko/earthquake-project">Code</a>
+              </div>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project" id="web">
+              <span class="kind">Java,Springboot,H2</span>
+              <div class="shot filled"><img src="img/springboot_menu.png" alt="Screenshot of My Project" loading="lazy"></div>
+              <div>
+                  <h3>Menu Application: Dish & Chef Filtering</h3>
+                  <p>Spring Boot web application for browsing a restaurant menu. It lists dishes and their chefs, and lets you filter the dishes by chef, delete & add chefs as well as dishes.</p>
+              </div>
+              <div class="links">
+                  <a href="https://github.com/MilenkoskiDarko/Springboot-menu-application-Dish-Chef-filtering-">Code</a>
+              </div>
+          </article>
+
+
+          <!-- PROJECT 3 -->
+          <article class="project" id="android">
+              <span class="kind">Android,Kotlin,XML</span>
+              <div class="shot filled"><img src="img/sourdough_calculator.png" alt="Screenshot of My Project" loading="lazy"></div>
+              <div>
+                  <h3>Sourdough Calculator</h3>
+                  <p>Android application built with Kotlin and XML designed to help a bakery calculate precise ingredient weights based on bakery's private percentages.<b>Using this app the bakery saves 25 minutes a day from manual calculations</b>.</p>
+              </div>
+              <div class="links">
+                  <a href="https://github.com/MilenkoskiDarko/android-sourdough-calculator">Code</a>
+              </div>
+          </article>
+          <!-- PROJECT 4-->
+          <article class="project" id="javascript">
+              <span class="kind">JavaScript</span>
+              <div class="shot filled"><img src="img/javascript_memory_game.png" alt="Screenshot of My Project" loading="lazy"></div>
+              <div>
+                  <h3>Memory game</h3>
+                  <p>Pure javascript memory game.</p>
+              </div>
+              <div class="links">
+                  <a href="https://github.com/MilenkoskiDarko/MemoryGame">Code</a>
+              </div>
+          </article>
+
+          <!-- PROJECT 5-->
+          <article class="project" id="apartments_bootstrap">
+              <span class="kind">HTML,CSS,Bootstrap</span>
+              <div class="shot filled"><img src="img/apartments.png" alt="Screenshot of My Project" loading="lazy"></div>
+              <div>
+                  <h3>Website for apartments located in Ohrid</h3>
+                  <p>A clean view of the apartments, with crucial information and a form to request additional information or reservation.</p>
+              </div>
+              <div class="links">
+                  <a href="#">Code</a>
+              </div>
+          </article>
+
+          <!-- PROJECT 6-->
+          <article class="project" id="foodjoy_bootstrap">
+              <span class="kind">HTML,CSS,Bootstrap</span>
+              <div class="shot filled"><img src="img/foodjoy_bakery.png" alt="Screenshot of My Project" loading="lazy"></div>
+              <div>
+                  <h3>Website for local <b>Sourdough artisan bakery Foodjoy_ves</b></h3>
+                  <p>Simple view of the services the bakery provides, their products, location and contact form.</p>
+              </div>
+              <div class="links">
+                  <a href="#">Code</a>
+              </div>
+          </article>
+      </div>
+    </div>
+  </section>
+
+    <section id="about">
+        <div class="wrap about">
+            <div>
+                <h2>About</h2>
+                <p> Hi,<br><br>
+
+                    I'm Darko Milenkoski, born february 2003 in Ohrid.<br>
+                    I'm a software engineering student at Faculty of Computer Science and Engineering (FINKI).<br><br>
+
+                    Because I feel like there's a lot left to learn,
+                    I'm still exploring where I want to specialize.<br><br>
+
+                    Right now I'm curious about Java backend development, DevOps, IoT, iOS,
+                    AI engineering, data, and cybersecurity.
+                    <br><br>
+                    I'm looking for an internship where I can learn from a team,
+                    work on real projects, and find out which direction fits me best.
+                </p>
+            </div>
+            <div class="skill-groups" aria-label="Skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Object-oriented programming</li>
+                    <li>Advanced programming (advanced java)</li>
+                    <li>Algorithms &amp; data structures</li>
+                    <li>Web development (Java springboot)</li>
+                    <li>Databases (PostgreSQL,H2)</li>
+                    <li>Web design (HTML,CSS,JS)</li>
+                    <li>HCI design (Bootstrap)</li>
+                    <li>Operating systems (Docker,shell)</li>
+                    <li>Computer networks (Cisco packet tracer)</li>
+                    <li>Software engineering (Git)</li>
+                    <li>Computer architecture</li>
+                    <li>Discrete mathematics</li>
+                    <li>Android(Kotlin,XML)</li>
+                    <li>C/C++</li>
+                    <li>Python</li>
+                    <li>Cybersecurity basics</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Contact</h2>
+
+        <p><b>Need a website or app for your business? Hire me and let's build it.</b></p>
+        <p><b>Looking for an intern? I'd love to join your team.</b></p>
+
+      <a class="big bi bi-envelope" href="mailto:milenkoskidarko16@gmail.com"> milenkoskidarko16@gmail.com</a><br>
+        <a class="big bi bi-phone" > +389 70 356 488</a><br>
+        <p>Based in Skopje/Ohrid, Macedonia. Open to remote work.</p>
+      <ul>
+        <li><a href="https://github.com/MilenkoskiDarko">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/darko-milenkoski-25081a27b/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+    <div class="wrap">© <span id="yr">2026</span> <a href="#">Darko Milenkoski</a></div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // Highlight the nav link of the section you are currently viewing
+  (function () {
+      var links = document.querySelectorAll('nav a[href^="#"]');
+      var map = {};
+      links.forEach(function (a) { map[a.getAttribute('href').slice(1)] = a; });
+      function setActive(id) {
+          links.forEach(function (a) { a.classList.remove('active'); a.removeAttribute('aria-current'); });
+          if (id && map[id]) { map[id].classList.add('active'); map[id].setAttribute('aria-current', 'true'); }
+      }
+      if (!('IntersectionObserver' in window)) return;
+      var observer = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+              if (entry.isIntersecting) setActive(entry.target.id);
+          });
+      }, { rootMargin: '-40% 0px -55% 0px' });
+      Object.keys(map).forEach(function (id) {
+          var section = document.getElementById(id);
+          if (section) observer.observe(section);
+      });
+      // At the very top (hero), nothing is highlighted
+      window.addEventListener('scroll', function () { if (window.scrollY < 100) setActive(null); }, { passive: true });
+  })();
+</script>
+</body>
+</html>
