@@ -207,18 +207,36 @@
 
   <section id="contact" class="contact">
     <div class="wrap">
-      <h2>Contact</h2>
+        <div class="contact-grid">
+            <div>
+                <h2>Contact</h2>
+                <p>Need a website or app for your business? Hire me and let's build it.</p>
+                <p>Looking for an intern? I'd love to join your team.</p>
+                <a class="bi bi-envelope" href="mailto:milenkoskidarko16@gmail.com"><b>milenkoskidarko16@gmail.com</b></a><br>
+                <p class="bi bi-phone"><b>+389 70 356 488</b></p>
+                <p>Based in Skopje/Ohrid, Macedonia. Open to remote work.</p>
+                <ul>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
 
-        <p><b>Need a website or app for your business? Hire me and let's build it.</b></p>
-        <p><b>Looking for an intern? I'd love to join your team.</b></p>
-
-      <a class="big bi bi-envelope" href="mailto:milenkoskidarko16@gmail.com"> milenkoskidarko16@gmail.com</a><br>
-        <a class="big bi bi-phone" > +389 70 356 488</a><br>
-        <p>Based in Skopje/Ohrid, Macedonia. Open to remote work.</p>
-      <ul>
-        <li><a href="https://github.com/MilenkoskiDarko">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/darko-milenkoski-25081a27b/">LinkedIn</a></li>
-      </ul>
+            <form class="contact-form" action="https://formspree.io/f/mzezraqy" method="POST">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
     </div>
   </section>
 </main>
